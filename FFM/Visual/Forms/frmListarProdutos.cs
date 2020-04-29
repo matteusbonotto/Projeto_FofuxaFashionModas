@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace FFM.Visual.Forms
 {
-    public partial class frm_Login : Form
+    public partial class frmListarProdutos : Form
     {
-        public frm_Login()
+        public frmListarProdutos()
         {
             InitializeComponent();
         }
-
-
-
-
     }
 }

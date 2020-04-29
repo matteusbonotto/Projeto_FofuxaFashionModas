@@ -8,13 +8,9 @@ namespace FFM
     public abstract class Produto_Categoria : Produto
     {
         private Int32 iID_Produto_Categoria;
-        private String sRoupas;
-        private String sCalças;
-        private String sSapatos;
+        private String sProduto_Descricao_Categoria;
 
         public int IID_Produto_Categoria { get => iID_Produto_Categoria; set => iID_Produto_Categoria = value; }
-        public string SRoupas { get => sRoupas; set => sRoupas = value; }
-        public string SCalças { get => sCalças; set => sCalças = value; }
-        public string SSapatos { get => sSapatos; set => sSapatos = value; }
+        public string SProduto_Descricao_Categoria { get => sProduto_Descricao_Categoria; set => sProduto_Descricao_Categoria = value; }
     }
 }
