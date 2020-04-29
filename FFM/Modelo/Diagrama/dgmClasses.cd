@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FFM.CRUD">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAChAAEAAAAAAAwCAAAKAAAQAAAAAAAAAQAAAAAAAAg=</HashCode>
+      <FileName>Modelo\Classes\CRUD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Pessoa">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAgBQAgAYAAIACAAgAAAAIBAAAAAAgEAAAAAAAAA=</HashCode>
+      <FileName>Modelo\Classes\Pessoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Cliente">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="FFM.Pessoa_Categoria" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="1.75" />
+        <Point X="5.75" Y="1.344" />
+        <Point X="7.75" Y="1.344" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>Modelo\Classes\Cliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Funcionario">
+    <Position X="11.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
+      <FileName>Modelo\Classes\Funcionario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Departamento">
+    <Position X="7" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAACAAAAg=</HashCode>
+      <FileName>Modelo\Classes\Departamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Licenca">
+    <Position X="9.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\Classes\Licenca.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Produto">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAEQAAAAAAACAAIAAAECIAAAACACAAA=</HashCode>
+      <FileName>Modelo\Classes\Produto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Produto_Categoria">
+    <Position X="3" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAEIAAAACAAABAAAAAAAAAAAAAAAAAAACAAAAAgBAA=</HashCode>
+      <FileName>Modelo\Classes\Categoria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Estoque">
+    <Position X="10.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\Classes\Estoque.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Pedido">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAgACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Modelo\Classes\Pedido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Produto_Detalhes">
+    <Position X="5.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAABAAEAAQABAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\Classes\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Pessoa_Categoria">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAACAAEAAgA=</HashCode>
+      <FileName>Modelo\Classes\Tipo_Pessoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
