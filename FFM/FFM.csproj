@@ -200,6 +200,12 @@
     <Compile Include="Usuario_Acesso.cs" />
     <Compile Include="Utilitario\util_EnviarEmail.cs" />
     <Compile Include="Utilitario\util_Msgbox.cs" />
+    <Compile Include="Visual\Forms\Cadastros\frm_Cadastrar_Produtos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\Forms\Cadastros\frm_Cadastrar_Produtos.Designer.cs">
+      <DependentUpon>frm_Cadastrar_Produtos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Visual\Forms\Cadastros\frm_Cadastrar_Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,18 @@
     <Compile Include="Visual\Forms\frm_MenuPrincipal.Designer.cs">
       <DependentUpon>frm_MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Visual\Forms\Listar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\Forms\Listar.Designer.cs">
+      <DependentUpon>Listar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visual\Forms\Vendas\frm_Vendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\Forms\Vendas\frm_Vendas.Designer.cs">
+      <DependentUpon>frm_Vendas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Visual\sc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +263,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Visual\Forms\Cadastros\frm_Cadastrar_Produtos.resx">
+      <DependentUpon>frm_Cadastrar_Produtos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Visual\Forms\Cadastros\frm_Cadastrar_Usuario.resx">
       <DependentUpon>frm_Cadastrar_Usuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,6 +277,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Visual\Forms\frm_MenuPrincipal.resx">
       <DependentUpon>frm_MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual\Forms\Listar.resx">
+      <DependentUpon>Listar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual\Forms\Vendas\frm_Vendas.resx">
+      <DependentUpon>frm_Vendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Visual\sc.resx">
       <DependentUpon>sc.cs</DependentUpon>
@@ -282,7 +309,6 @@
     <Folder Include="Repositorio\" />
     <Folder Include="Visual\Forms\A definir\" />
     <Folder Include="Visual\Forms\Relatorios\" />
-    <Folder Include="Visual\Forms\Vendas\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
