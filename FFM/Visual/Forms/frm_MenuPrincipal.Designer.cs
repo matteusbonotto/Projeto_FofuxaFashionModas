@@ -89,6 +89,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // lblLicenca
             // 
@@ -305,13 +306,13 @@
             // 
             // frm_MenuPrincipal
             // 
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panelCabecalho);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelConteudo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_MenuPrincipal";
             this.Text = "frm_MenuPrincipal";
             this.panelCabecalho.ResumeLayout(false);

@@ -200,6 +200,12 @@
     <Compile Include="Usuario_Acesso.cs" />
     <Compile Include="Utilitario\util_EnviarEmail.cs" />
     <Compile Include="Utilitario\util_Msgbox.cs" />
+    <Compile Include="Visual\Forms\Cadastros\frm_Cadastrar_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\Forms\Cadastros\frm_Cadastrar_Usuario.Designer.cs">
+      <DependentUpon>frm_Cadastrar_Usuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Visual\Forms\frmListarProdutos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +245,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Visual\Forms\Cadastros\frm_Cadastrar_Usuario.resx">
+      <DependentUpon>frm_Cadastrar_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Visual\Forms\frmListarProdutos.resx">
       <DependentUpon>frmListarProdutos.cs</DependentUpon>
     </EmbeddedResource>
@@ -271,6 +280,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositorio\" />
+    <Folder Include="Visual\Forms\A definir\" />
+    <Folder Include="Visual\Forms\Relatorios\" />
+    <Folder Include="Visual\Forms\Vendas\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
