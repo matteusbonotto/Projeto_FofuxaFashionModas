@@ -100,6 +100,8 @@ namespace FFM.Visual.Forms
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+
+            //teste
         }
     }
 }
