@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FFM
 {
-    public class Funcionario : Licenca
+    public class Funcionario : Departamento
     {
         private Int32 iID_Funcionario;
 

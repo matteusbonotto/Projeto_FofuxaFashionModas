@@ -29,24 +29,17 @@
     </TypeIdentifier>
   </Class>
   <Class Name="FFM.Funcionario">
-    <Position X="11.5" Y="2.25" Width="1.5" />
+    <Position X="10.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
       <FileName>Modelo\Classes\Funcionario.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FFM.Departamento">
-    <Position X="7" Y="2.25" Width="1.5" />
+    <Position X="7.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAACAAAAg=</HashCode>
+      <HashCode>AAAAAAAAAABAAAAgQAAAAAAAAAAAAAAACAAAACAAAAg=</HashCode>
       <FileName>Modelo\Classes\Departamento.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="FFM.Licenca">
-    <Position X="9.25" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Modelo\Classes\Licenca.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FFM.Produto">
@@ -59,7 +52,7 @@
   <Class Name="FFM.Produto_Categoria">
     <Position X="3" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAEIAAAACAAABAAAAAAAAAAAAAAAAAAACAAAAAgBAA=</HashCode>
+      <HashCode>ABAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAEAAAABAAA=</HashCode>
       <FileName>Modelo\Classes\Categoria.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -89,6 +82,21 @@
     <TypeIdentifier>
       <HashCode>AQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAACAAEAAgA=</HashCode>
       <FileName>Modelo\Classes\Tipo_Pessoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Usuario_Acesso">
+    <Position X="12" Y="2.25" Width="1.5" />
+    <InheritanceLine Type="FFM.Pessoa" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="0.5" />
+        <Point X="3.5" Y="0.125" />
+        <Point X="12.75" Y="0.125" />
+        <Point X="12.75" Y="2.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEACAABoAAAAAEAAAABAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Usuario_Acesso.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
