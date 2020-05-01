@@ -16,5 +16,10 @@ namespace FFM.Visual.Forms.Cadastros
         {
             InitializeComponent();
         }
+
+        private void bunifuMaterialTextbox2_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

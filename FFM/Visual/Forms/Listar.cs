@@ -16,5 +16,10 @@ namespace FFM.Visual.Forms
         {
             InitializeComponent();
         }
+
+        private void btnProcurar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
