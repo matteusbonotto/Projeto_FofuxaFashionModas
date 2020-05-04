@@ -60,7 +60,7 @@
             this.DataNasc});
             this.grdClientes.Location = new System.Drawing.Point(17, 72);
             this.grdClientes.Name = "grdClientes";
-            this.grdClientes.Size = new System.Drawing.Size(617, 324);
+            this.grdClientes.Size = new System.Drawing.Size(649, 324);
             this.grdClientes.TabIndex = 31;
             // 
             // id
@@ -97,7 +97,7 @@
             // 
             this.btnProcurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnProcurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProcurar.Location = new System.Drawing.Point(593, 42);
+            this.btnProcurar.Location = new System.Drawing.Point(759, 42);
             this.btnProcurar.Name = "btnProcurar";
             this.btnProcurar.Size = new System.Drawing.Size(29, 26);
             this.btnProcurar.TabIndex = 38;
@@ -134,15 +134,16 @@
             this.txtfiltroClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfiltroClientes.Location = new System.Drawing.Point(230, 42);
             this.txtfiltroClientes.Name = "txtfiltroClientes";
-            this.txtfiltroClientes.Size = new System.Drawing.Size(360, 24);
+            this.txtfiltroClientes.Size = new System.Drawing.Size(436, 24);
             this.txtfiltroClientes.TabIndex = 35;
             // 
             // btnAtualizarLista
             // 
             this.btnAtualizarLista.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnAtualizarLista.BackColor = System.Drawing.Color.White;
+            this.btnAtualizarLista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnAtualizarLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtualizarLista.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtualizarLista.ForeColor = System.Drawing.Color.White;
             this.btnAtualizarLista.Location = new System.Drawing.Point(17, 403);
             this.btnAtualizarLista.Name = "btnAtualizarLista";
             this.btnAtualizarLista.Size = new System.Drawing.Size(124, 38);
@@ -157,17 +158,18 @@
             this.lblTitulo.ForeColor = System.Drawing.Color.Gray;
             this.lblTitulo.Location = new System.Drawing.Point(12, 9);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(194, 25);
+            this.lblTitulo.Size = new System.Drawing.Size(118, 25);
             this.lblTitulo.TabIndex = 33;
-            this.lblTitulo.Text = "Listagem de Clientes";
+            this.lblTitulo.Text = "Listagem de";
             // 
             // btnVoltar
             // 
             this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnVoltar.BackColor = System.Drawing.Color.White;
+            this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(538, 403);
+            this.btnVoltar.ForeColor = System.Drawing.Color.White;
+            this.btnVoltar.Location = new System.Drawing.Point(571, 403);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(95, 38);
             this.btnVoltar.TabIndex = 32;
@@ -178,7 +180,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(678, 450);
             this.Controls.Add(this.grdClientes);
             this.Controls.Add(this.btnProcurar);
             this.Controls.Add(this.cboFiltrarCliente);

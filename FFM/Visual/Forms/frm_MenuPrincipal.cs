@@ -108,5 +108,10 @@ namespace FFM.Visual.Forms
         {
 
         }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormNoPanel<frmListarProdutos>();
+        }
     }
 }

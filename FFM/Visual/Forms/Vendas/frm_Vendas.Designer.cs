@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gbxVenda = new System.Windows.Forms.GroupBox();
             this.btnServico = new System.Windows.Forms.RadioButton();
             this.btnProduto = new System.Windows.Forms.RadioButton();
@@ -85,7 +85,7 @@
             this.gbxVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxVenda.Location = new System.Drawing.Point(4, 3);
             this.gbxVenda.Name = "gbxVenda";
-            this.gbxVenda.Size = new System.Drawing.Size(825, 467);
+            this.gbxVenda.Size = new System.Drawing.Size(813, 467);
             this.gbxVenda.TabIndex = 2;
             this.gbxVenda.TabStop = false;
             this.gbxVenda.Text = "Vendas";
@@ -115,7 +115,7 @@
             // btnCarrinho
             // 
             this.btnCarrinho.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCarrinho.Location = new System.Drawing.Point(748, 19);
+            this.btnCarrinho.Location = new System.Drawing.Point(736, 19);
             this.btnCarrinho.Name = "btnCarrinho";
             this.btnCarrinho.Size = new System.Drawing.Size(62, 55);
             this.btnCarrinho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -126,7 +126,7 @@
             // 
             this.nudQtd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.nudQtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudQtd.Location = new System.Drawing.Point(675, 25);
+            this.nudQtd.Location = new System.Drawing.Point(663, 25);
             this.nudQtd.Name = "nudQtd";
             this.nudQtd.Size = new System.Drawing.Size(55, 24);
             this.nudQtd.TabIndex = 35;
@@ -146,7 +146,7 @@
             this.lblQtd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblQtd.AutoSize = true;
             this.lblQtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQtd.Location = new System.Drawing.Point(590, 27);
+            this.lblQtd.Location = new System.Drawing.Point(578, 27);
             this.lblQtd.Name = "lblQtd";
             this.lblQtd.Size = new System.Drawing.Size(36, 18);
             this.lblQtd.TabIndex = 32;
@@ -167,7 +167,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(590, 56);
+            this.label5.Location = new System.Drawing.Point(578, 56);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 18);
             this.label5.TabIndex = 6;
@@ -184,7 +184,7 @@
             this.Column7});
             this.grdProdutos.Location = new System.Drawing.Point(9, 84);
             this.grdProdutos.Name = "grdProdutos";
-            this.grdProdutos.Size = new System.Drawing.Size(805, 164);
+            this.grdProdutos.Size = new System.Drawing.Size(793, 164);
             this.grdProdutos.TabIndex = 30;
             // 
             // Column5
@@ -215,13 +215,13 @@
             this.Column4});
             this.grdCarrinho.Location = new System.Drawing.Point(9, 276);
             this.grdCarrinho.Name = "grdCarrinho";
-            this.grdCarrinho.Size = new System.Drawing.Size(618, 184);
+            this.grdCarrinho.Size = new System.Drawing.Size(606, 184);
             this.grdCarrinho.TabIndex = 21;
             // 
             // Column1
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column1.HeaderText = "CODIGO";
             this.Column1.Name = "Column1";
             this.Column1.Visible = false;
@@ -253,7 +253,7 @@
             this.gbxpagamento.Controls.Add(this.lblDesconto);
             this.gbxpagamento.Controls.Add(this.lblTotal);
             this.gbxpagamento.Controls.Add(this.cboTipoPagamento);
-            this.gbxpagamento.Location = new System.Drawing.Point(633, 276);
+            this.gbxpagamento.Location = new System.Drawing.Point(621, 276);
             this.gbxpagamento.Name = "gbxpagamento";
             this.gbxpagamento.Size = new System.Drawing.Size(181, 184);
             this.gbxpagamento.TabIndex = 2;
@@ -333,7 +333,7 @@
             this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuMaterialTextbox5.MaxLength = 32767;
             this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
-            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(538, 28);
+            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(526, 28);
             this.bunifuMaterialTextbox5.TabIndex = 57;
             this.bunifuMaterialTextbox5.Text = "USUÁRIO";
             this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -359,7 +359,7 @@
             this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuMaterialTextbox1.MaxLength = 32767;
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(232, 28);
+            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(220, 28);
             this.bunifuMaterialTextbox1.TabIndex = 58;
             this.bunifuMaterialTextbox1.Text = "USUÁRIO";
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;

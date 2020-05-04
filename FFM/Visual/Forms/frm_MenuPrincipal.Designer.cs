@@ -271,6 +271,7 @@
             this.btnClientes.TabIndex = 0;
             this.btnClientes.Text = "    Produtos";
             this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // panelMenu
             // 

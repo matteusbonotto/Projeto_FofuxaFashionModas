@@ -183,6 +183,9 @@
     <Compile Include="Conexao\clsConexao.cs" />
     <Compile Include="Controle\ctrl_EnviarEmail.cs" />
     <Compile Include="Controle\ctrl_Login.cs" />
+    <Compile Include="Modelo\Classes\Endereço.cs" />
+    <Compile Include="Modelo\Classes\Fisica.cs" />
+    <Compile Include="Modelo\Classes\Juridica.cs" />
     <Compile Include="Modelo\Classes\Categoria.cs" />
     <Compile Include="Modelo\Classes\Cliente.cs" />
     <Compile Include="Modelo\Classes\Departamento.cs" />
@@ -200,7 +203,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Modelo\Classes\Tipo_Pessoa.cs" />
     <Compile Include="Seguranca\HashMD5.cs" />
-    <Compile Include="Usuario_Acesso.cs" />
+    <Compile Include="Modelo\Classes\Usuario_Acesso.cs" />
     <Compile Include="Utilitario\util_EnviarEmail.cs" />
     <Compile Include="Utilitario\util_Msgbox.cs" />
     <Compile Include="Visual\Forms\Cadastros\frm_Cadastrar_Produtos.cs">
@@ -271,6 +274,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Visual\Forms\Cadastros\frm_Cadastrar_Produtos.resx">
       <DependentUpon>frm_Cadastrar_Produtos.cs</DependentUpon>
@@ -318,9 +322,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Repositorio\" />
     <Folder Include="Visual\Forms\A definir\" />
     <Folder Include="Visual\Forms\Relatorios\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Repositorio\icons8-adicionar-o-carrinho-de-compras-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Repositorio\icons8-adicionar-o-carrinho-de-compras-30.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
