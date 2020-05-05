@@ -4,72 +4,53 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-
+// Validações
 namespace FFM.Controle
 {
-    //class ctrl_Cadastro_Produto
-    //{
-    //    private long tamanhoArquivoImagem = 0;
-    //    private byte[] vetorImagens;
-    //    Conexao.clsConexao conexao = new Conexao.clsConexao();
-    //    protected void CarregaImagem()
-    //    {
-    //        try
-    //        {
-    //            this.openFileDialog1.ShowDialog(this);
-    //            string strFn = this.openFileDialog1.FileName;
+    class ctrl_Cadastro_Produto
+    {
+        public ctrl_Cadastro_Produto()
+        {
 
-    //            if (string.IsNullOrEmpty(strFn))
-    //                return;
+        }
 
-    //            this.picImagem.Image = Image.FromFile(strFn);
-    //            FileInfo arqImagem = new FileInfo(strFn);
-    //            tamanhoArquivoImagem = arqImagem.Length;
-    //            FileStream fs = new FileStream(strFn, FileMode.Open, FileAccess.Read, FileShare.Read);
-    //            vetorImagens = new byte[Convert.ToInt32(this.tamanhoArquivoImagem)];
-    //            int iBytesRead = fs.Read(vetorImagens, 0, Convert.ToInt32(this.tamanhoArquivoImagem));
-    //            fs.Close();
-    //        }
-    //        catch (Exception ex)
-    //        {
-    //            MessageBox.Show(ex.Message);
-    //        }
-    //    }
+        public void Cadastrar_Produto(Int32 _iID_Produto, String _sNome_Arquivo, String _sNome_Produto, String _sDescricao_Produto, String _sCor, String _sCategoria, String _sTamanho, String _sCodigo_Barras, Double _dPreco_Compra, Double _dPreco_Venda)
+        {
+            Produto csp = new Produto();
+            Produto_Categoria csc = new Produto_Categoria();
+            Produto_Detalhes csd = new Produto_Detalhes();
+            CRUD crud = new CRUD();
+            try
+            {
+                if (_iID_Produto != 0)
+                {
+                    //Passo oque veio do Controle para as Variaveis Encapsuladas do Modelo
+                    csp.IID_Produto = _iID_Produto;
+                    csp.DPreco_Compra = _dPreco_Compra;
+                    csp.DPreco_Venda = _dPreco_Venda;
+                    csc.SProduto_Descricao_Categoria = _sCategoria;
+                    csd.SNome_Arquivo = _sNome_Arquivo;
+                    csd.SNome_Produto = _sNome_Produto;
+                    csd.SDescricao_Produto = _sDescricao_Produto;
+                    csd.SCor = _sCor;
+                    csd.STamanho = _sTamanho;
 
-    //    public void Retorna_Img_Db()
-    //    {
-    //        if (txtCodigoImagem.Text == string.Empty)
-    //        {
-    //            MessageBox.Show("Informe o código da imagem no Banco de dados", "Código da Imagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
-    //            return;
-    //        }
-
-    //        try
-    //        {
-    //            SqlCommand cmdSelect = new SqlCommand("select imagem from Imagens where id=@ID", this.conexaoSQLServer);
-    //            cmdSelect.Parameters.Add("@ID", SqlDbType.Int, 4);
-    //            cmdSelect.Parameters["@ID"].Value = this.txtCodigoImagem.Text;
-
-    //            this.conexaoSQLServer.Open();
-    //            byte[] vetorImagem = (byte[])cmdSelect.ExecuteScalar();
-    //            string strNomeArquivo = Convert.ToString(DateTime.Now.ToFileTime());
-    //            FileStream fs = new FileStream(strNomeArquivo, FileMode.CreateNew, FileAccess.Write);
-    //            fs.Write(vetorImagem, 0, vetorImagem.Length);
-    //            fs.Flush();
-    //            fs.Close();
-
-    //            picImagem.Image = Image.FromFile(strNomeArquivo);
-    //        }
-    //        catch (Exception ex)
-    //        {
-    //            MessageBox.Show(ex.Message);
-
-    //        }
-    //        finally
-    //        {
-    //            this.conexaoSQLServer.Close();
-
-    //        }
-    //    }
-    //}
+                    //Passo as Variaveis do Modelo para os parametros do CRUD para Cadastrar os dados
+                    crud.Cadastrar_Produto(csp.IID_Produto, csd.SNome_Arquivo, csd.SNome_Produto, csd.SDescricao_Produto, csd.SCor, csc.SProduto_Descricao_Categoria, csd.STamanho,csp.IQuantidade, csp.SCodigo_Barras, csp.DPreco_Compra, csp.DPreco_Venda);
+                }
+                else
+                {
+                    Utilitario.util_Msgbox.Aviso("Não foi Possivel Cadastrar o produto, verifique se você o selecionou, ou se algum dado esta incorreto.");
+                }
+            }
+            finally
+            {
+                //Destruo os objetos para não ocupar memoria
+                csp = null;
+                csc = null;
+                csd = null;
+                crud = null;
+            }
+        }
+    }
 }

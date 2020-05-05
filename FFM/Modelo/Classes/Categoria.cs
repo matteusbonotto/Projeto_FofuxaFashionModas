@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FFM
 {
-    public abstract class Produto_Categoria : Produto
+    public class Produto_Categoria : Produto
     {
         private Int32 iID_Produto_Categoria;
         private String sProduto_Descricao_Categoria;

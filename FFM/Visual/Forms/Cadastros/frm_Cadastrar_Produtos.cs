@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FFM.Conexao;
+using FFM.Controle;
 using MySql.Data.MySqlClient;
 
 namespace FFM.Visual.Forms.Cadastros
@@ -23,18 +24,19 @@ namespace FFM.Visual.Forms.Cadastros
         private String iQuantidade;
         private Double dValor;
         private long tamanhoArquivoImagem = 0;
-        private byte[] vetorImagens;
+        public byte[] vetorImagens;
         private clsConexao Conexao;
         
 
         public frm_Cadastrar_Produtos()
         {
             InitializeComponent();
-            Listar_Produtos();
+            
         }
 
         private void Listar_Produtos()
         {
+            pnl_Listar_Produtos.Controls.Clear();
             //for (int i = 0; i < Produtos.Count; i++)
             for (int i = 0; i < 5; i++)
             {
@@ -45,7 +47,7 @@ namespace FFM.Visual.Forms.Cadastros
             }
 
         }
-        private void CarregaImagem()
+        public void CarregaImagem()
         {
             try
             {
@@ -70,7 +72,7 @@ namespace FFM.Visual.Forms.Cadastros
             }
         }
 
-        private void Carregaimgem_DB()
+        public void Carregaimgem_DB()
         {
             if (txtId.Text == string.Empty)
             {
@@ -81,6 +83,8 @@ namespace FFM.Visual.Forms.Cadastros
             MySqlConnection con = new MySqlConnection(Conexao.sGlob_Conexao);
             try
             {
+
+
                 con.Open();
                 MySqlCommand cmdSelect = new MySqlCommand("select Imagem_Produto from Produtos where id_Produto=@ID", con);
                 cmdSelect.Parameters.AddWithValue("@ID", txtId.Text);
@@ -140,12 +144,16 @@ namespace FFM.Visual.Forms.Cadastros
 
         private void btnCadastrarProduto_Click(object sender, EventArgs e)
         {
+            CRUD crud = new CRUD();
+            ctrl_Cadastro_Produto Cadastro_Produtos = new ctrl_Cadastro_Produto();
             Salvar_imgem_DB();
+            Cadastro_Produtos.Cadastrar_Produto(Convert.ToInt32(txtId.Text), txtNomeArquivo.Text, txtNomeProduto.Text, txtDescricao_Produto.Text, txtCor.Text, cboCategoria.Text, cboTamanho.Text, txtCodigo_Barras.Text, Convert.ToDouble(txtPreco_Conpra_Produto.Text), Convert.ToDouble(txtPreco_Venda_Produto.Text)); //Colocar dados para cadastrar produto
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Carregaimgem_DB();
+            //Carregaimgem_DB();
+            Listar_Produtos();
         }
     }
 }

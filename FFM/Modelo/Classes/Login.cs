@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace FFM.Modelo
 {
-    class mdlo_Login
+    class Login
     {
         private Conexao.clsConexao conexao;
 

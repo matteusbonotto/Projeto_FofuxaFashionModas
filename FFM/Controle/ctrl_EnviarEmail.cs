@@ -10,7 +10,7 @@ namespace FFM.Controle
 {
     class ctrl_EnviarEmail
     {
-        private Modelo.mdlo_EnviarEmail emailModelo;
+        private Modelo.EnviarEmail emailModelo;
         private Utilitario.util_EnviarEmail enviarEmail;
         private Seguranca.HashMD5 hash;
         private string MensagemSplashScreen;
@@ -20,7 +20,7 @@ namespace FFM.Controle
             // System.Windows.Forms.MessageBox.Show(emailUsuario);
             if (emailUsuario != "" && emailUsuario != "E-mail")
             {
-                emailModelo = new Modelo.mdlo_EnviarEmail();
+                emailModelo = new Modelo.EnviarEmail();
                 emailModelo.Email = emailUsuario;
 
                 MensagemSplashScreen = "Enviando e-mail";
@@ -85,7 +85,7 @@ namespace FFM.Controle
         private string CadastrarNovaSenha(int id_usuario)
         {
             hash = new Seguranca.HashMD5();
-            emailModelo = new Modelo.mdlo_EnviarEmail();
+            emailModelo = new Modelo.EnviarEmail();
             Random random = new Random();
 
             string novaSenha = null;

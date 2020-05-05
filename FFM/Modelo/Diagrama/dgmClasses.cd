@@ -39,7 +39,7 @@
   <Class Name="FFM.Produto">
     <Position X="2.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABAAAAEQAAAAAAACAAIAAAECIAAAACACAAA=</HashCode>
+      <HashCode>AAAAAEAAABAAAAESAAAAAAACAAIAAAECIAAAACACAAA=</HashCode>
       <FileName>Modelo\Classes\Produto.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -67,7 +67,7 @@
   <Class Name="FFM.Produto_Detalhes">
     <Position X="7.25" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAIAAAAAAAAAABAAEAAQABAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAIAAAAAAAAAABAAEAAQAhCAEAIAAhAAAAAAAACAAA=</HashCode>
       <FileName>Modelo\Classes\Item.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -111,8 +111,8 @@
     <Position X="0.5" Y="5.5" Width="1.5" />
     <InheritanceLine Type="FFM.CRUD" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="0.75" Y="3.719" />
-        <Point X="0.75" Y="5.5" />
+        <Point X="0.812" Y="4.747" />
+        <Point X="0.812" Y="5.5" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -123,7 +123,7 @@
   <Class Name="FFM.CRUD">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAChAAEAAAAAAAwCAAAKAAAQAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <HashCode>AAChAAEAAABAAAwCAQAKAAAQACAAAAAAAAAAAAAAAgg=</HashCode>
       <FileName>Modelo\Classes\CRUD.cs</FileName>
     </TypeIdentifier>
   </Class>

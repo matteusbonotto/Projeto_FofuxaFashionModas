@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FFM.Visual.Forms
+namespace FFM.Visual.Forms.Cadastros
 {
-    public partial class frm_Sobre : Form
+    public partial class Listar : Form
     {
-        public frm_Sobre()
+        public Listar()
         {
             InitializeComponent();
         }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FFM.Modelo
 {
-    class mdlo_EnviarEmail
+    class EnviarEmail
     {
         private Conexao.clsConexao conexao;
         private string usuario, nome, email, senha, salt_senha;

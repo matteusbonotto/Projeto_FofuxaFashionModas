@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace FFM.Visual.Forms
+namespace FFM.Visual.Forms.Principais
 {
     partial class frm_MenuPrincipal
     {
@@ -49,10 +49,10 @@ namespace FFM.Visual.Forms
             this.btnCompras = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.mnuUsuario = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panelConteudo = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.panelCabecalho.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -79,7 +79,7 @@ namespace FFM.Visual.Forms
             this.panelCabecalho.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCabecalho.Location = new System.Drawing.Point(152, 0);
             this.panelCabecalho.Name = "panelCabecalho";
-            this.panelCabecalho.Size = new System.Drawing.Size(648, 40);
+            this.panelCabecalho.Size = new System.Drawing.Size(764, 40);
             this.panelCabecalho.TabIndex = 6;
             // 
             // pictureBox2
@@ -87,7 +87,7 @@ namespace FFM.Visual.Forms
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(241, 9);
+            this.pictureBox2.Location = new System.Drawing.Point(357, 9);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(23, 24);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -101,7 +101,7 @@ namespace FFM.Visual.Forms
             this.lblLicenca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblLicenca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLicenca.ForeColor = System.Drawing.Color.White;
-            this.lblLicenca.Location = new System.Drawing.Point(407, 12);
+            this.lblLicenca.Location = new System.Drawing.Point(523, 12);
             this.lblLicenca.Name = "lblLicenca";
             this.lblLicenca.Size = new System.Drawing.Size(99, 19);
             this.lblLicenca.TabIndex = 2;
@@ -113,7 +113,7 @@ namespace FFM.Visual.Forms
             this.lblDescricao_Licenca.AutoSize = true;
             this.lblDescricao_Licenca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescricao_Licenca.ForeColor = System.Drawing.Color.White;
-            this.lblDescricao_Licenca.Location = new System.Drawing.Point(270, 12);
+            this.lblDescricao_Licenca.Location = new System.Drawing.Point(386, 12);
             this.lblDescricao_Licenca.Name = "lblDescricao_Licenca";
             this.lblDescricao_Licenca.Size = new System.Drawing.Size(142, 17);
             this.lblDescricao_Licenca.TabIndex = 3;
@@ -138,7 +138,7 @@ namespace FFM.Visual.Forms
             this.btnRestaurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(513, 3);
+            this.btnRestaurar.Location = new System.Drawing.Point(629, 3);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(40, 34);
             this.btnRestaurar.TabIndex = 0;
@@ -153,7 +153,7 @@ namespace FFM.Visual.Forms
             this.btnMaximizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(559, 3);
+            this.btnMaximizar.Location = new System.Drawing.Point(675, 3);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(40, 34);
             this.btnMaximizar.TabIndex = 0;
@@ -168,7 +168,7 @@ namespace FFM.Visual.Forms
             this.btnFechar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFechar.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.Image")));
-            this.btnFechar.Location = new System.Drawing.Point(605, 3);
+            this.btnFechar.Location = new System.Drawing.Point(721, 3);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(40, 34);
             this.btnFechar.TabIndex = 0;
@@ -208,7 +208,7 @@ namespace FFM.Visual.Forms
             this.lbllblDescricao_Autenticacao.AutoSize = true;
             this.lbllblDescricao_Autenticacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbllblDescricao_Autenticacao.ForeColor = System.Drawing.Color.White;
-            this.lbllblDescricao_Autenticacao.Location = new System.Drawing.Point(28, 395);
+            this.lbllblDescricao_Autenticacao.Location = new System.Drawing.Point(28, 478);
             this.lbllblDescricao_Autenticacao.Name = "lbllblDescricao_Autenticacao";
             this.lbllblDescricao_Autenticacao.Size = new System.Drawing.Size(96, 17);
             this.lbllblDescricao_Autenticacao.TabIndex = 1;
@@ -221,7 +221,7 @@ namespace FFM.Visual.Forms
             this.lblAutenticacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblAutenticacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAutenticacao.ForeColor = System.Drawing.Color.White;
-            this.lblAutenticacao.Location = new System.Drawing.Point(9, 412);
+            this.lblAutenticacao.Location = new System.Drawing.Point(9, 495);
             this.lblAutenticacao.Name = "lblAutenticacao";
             this.lblAutenticacao.Size = new System.Drawing.Size(133, 34);
             this.lblAutenticacao.TabIndex = 0;
@@ -243,6 +243,7 @@ namespace FFM.Visual.Forms
             this.btnProdutos.TabIndex = 0;
             this.btnProdutos.Text = "   Estoque";
             this.btnProdutos.UseVisualStyleBackColor = true;
+            this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
             // 
             // btnCompras
             // 
@@ -293,8 +294,25 @@ namespace FFM.Visual.Forms
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(152, 450);
+            this.panelMenu.Size = new System.Drawing.Size(152, 533);
             this.panelMenu.TabIndex = 7;
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.HotPink;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 309);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(146, 39);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "        Cadastrar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -328,36 +346,20 @@ namespace FFM.Visual.Forms
             this.panelConteudo.BackColor = System.Drawing.Color.White;
             this.panelConteudo.Location = new System.Drawing.Point(152, 39);
             this.panelConteudo.Name = "panelConteudo";
-            this.panelConteudo.Size = new System.Drawing.Size(648, 411);
+            this.panelConteudo.Size = new System.Drawing.Size(764, 494);
             this.panelConteudo.TabIndex = 8;
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.HotPink;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 309);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 39);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "        Cadastrar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // frm_MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(916, 533);
             this.Controls.Add(this.panelCabecalho);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelConteudo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_MenuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_MenuPrincipal";
             this.panelCabecalho.ResumeLayout(false);
             this.panelCabecalho.PerformLayout();

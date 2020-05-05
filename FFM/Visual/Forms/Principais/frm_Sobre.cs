@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FFM.Visual.Forms
+namespace FFM.Visual.Forms.Principais
 {
-    public partial class Listar : Form
+    public partial class frm_Sobre : Form
     {
-        public Listar()
+        public frm_Sobre()
         {
             InitializeComponent();
         }

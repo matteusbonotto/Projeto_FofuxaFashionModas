@@ -10,14 +10,14 @@ namespace FFM.Controle
     class ctrl_Login
     {
         private Seguranca.HashMD5 hash;
-        private Modelo.mdlo_Login loginModel;
+        private Modelo.Login loginModel;
         public void VerificarAcesso(string usuario, string senha)
         {
             if (usuario != "")
             {
                 if (senha != "")
                 {
-                    loginModel = new Modelo.mdlo_Login();
+                    loginModel = new Modelo.Login();
                     loginModel.Usuario = usuario;
 
                     if (loginModel.ListarUsuario())

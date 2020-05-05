@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FFM.Visual.Forms
+namespace FFM.Visual.Forms.Cadastros
 {
     public partial class frmListarProdutos : Form
     {

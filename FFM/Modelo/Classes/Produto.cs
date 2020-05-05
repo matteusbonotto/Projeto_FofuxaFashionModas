@@ -2,21 +2,27 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using FFM.Conexao;
+// Recebe e Trata as informações para o banco de dados
 namespace FFM
 {
-    public abstract class Produto : CRUD
+    public class Produto : CRUD
     {
+        public Produto()
+        {
+
+        }
+        private clsConexao conexao;
         private Int32 iID_Produto;
-        private Int32 iCodigo_Barras;
+        private String sCodigo_Barras;
         private Int32 iQuantidade;
-        private String dPreco_Compra;
-        private String dPreco_Venda;
+        private Double dPreco_Compra;
+        private Double dPreco_Venda;
 
         public int IID_Produto { get => iID_Produto; set => iID_Produto = value; }
-        public int ICodigo_Barras { get => iCodigo_Barras; set => iCodigo_Barras = value; }
         public int IQuantidade { get => iQuantidade; set => iQuantidade = value; }
-        public string DPreco_Compra { get => dPreco_Compra; set => dPreco_Compra = value; }
-        public string DPreco_Venda { get => dPreco_Venda; set => dPreco_Venda = value; }
+        public double DPreco_Compra { get => dPreco_Compra; set => dPreco_Compra = value; }
+        public double DPreco_Venda { get => dPreco_Venda; set => dPreco_Venda = value; }
+        public string SCodigo_Barras { get => sCodigo_Barras; set => sCodigo_Barras = value; }
     }
 }

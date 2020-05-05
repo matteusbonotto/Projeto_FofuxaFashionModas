@@ -1,4 +1,4 @@
-﻿namespace FFM.Visual.Forms
+﻿namespace FFM.Visual.Forms.Principais
 {
     partial class frm_Login
     {
@@ -82,7 +82,7 @@
             this.txtSenha.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtSenha.MaxLength = 32767;
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(208, 28);
+            this.txtSenha.Size = new System.Drawing.Size(208, 33);
             this.txtSenha.TabIndex = 12;
             this.txtSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -106,7 +106,7 @@
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtUsuario.MaxLength = 32767;
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(208, 28);
+            this.txtUsuario.Size = new System.Drawing.Size(208, 33);
             this.txtUsuario.TabIndex = 11;
             this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 

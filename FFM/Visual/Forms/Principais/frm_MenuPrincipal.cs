@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace FFM.Visual.Forms
+namespace FFM.Visual.Forms.Principais
 {
     public partial class frm_MenuPrincipal : Form
     {
@@ -113,22 +113,28 @@ namespace FFM.Visual.Forms
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            AbrirFormNoPanel<frmListarProdutos>();
+            AbrirFormNoPanel<Visual.Forms.Cadastros.frmListarProdutos>();
         }
 
         private void btnCompras_Click(object sender, EventArgs e)
         {
-            AbrirFormNoPanel<Visual.Forms.Vendas.frm_Vendas>();
+            AbrirFormNoPanel<Visual.Forms.Cadastros.frm_Cadastrar_Usuario>();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AbrirFormNoPanel<frm_Login>();
+            AbrirFormNoPanel<Visual.Forms.Principais.frm_Login>();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             AbrirFormNoPanel<Visual.Forms.Cadastros.frm_Cadastrar_Produtos>();
+        }
+
+        private void btnProdutos_Click(object sender, EventArgs e)
+        {
+            Visual.Forms.Cadastros.frm_Cadastro_Simples frmSimples = new Cadastros.frm_Cadastro_Simples();
+            frmSimples.ShowDialog();
         }
     }
 }

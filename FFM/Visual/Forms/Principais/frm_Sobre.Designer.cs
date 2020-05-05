@@ -1,4 +1,4 @@
-﻿namespace FFM.Visual.Forms
+﻿namespace FFM.Visual.Forms.Principais
 {
     partial class frm_Sobre
     {

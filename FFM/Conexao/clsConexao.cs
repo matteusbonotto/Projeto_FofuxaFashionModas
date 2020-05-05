@@ -11,7 +11,7 @@ namespace FFM.Conexao
 {
     class clsConexao
     {
-        private MySqlCommand cmd;
+        public MySqlCommand cmd;
         public MySqlConnection con;
         public string sGlob_Conexao;
         private string host = "localhost";

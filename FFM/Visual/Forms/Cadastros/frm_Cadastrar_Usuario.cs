@@ -15,9 +15,48 @@ namespace FFM.Visual.Forms.Cadastros
         public frm_Cadastrar_Usuario()
         {
             InitializeComponent();
+
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void opcCPF_CheckedChanged(object sender, EventArgs e)
+        {
+            if (opcCNPJ.Checked)
+            {
+                txtDocumento.Clear();
+                txtDocumento.Mask = "00.000.000/0000-00";
+                txtDocumento.Focus();
+            }
+            else
+            {
+                txtDocumento.TextAlign = HorizontalAlignment.Center;
+                txtDocumento.Clear();
+                txtDocumento.Mask = "000.000.000-00";
+                txtDocumento.Focus();
+            }
+        }
+
+        private void txtTelefone_Validating(object sender, CancelEventArgs e)
+        {
+            string str = txtTelefone.Text;
+            int Tamanho = str.Length;
+            if (Tamanho <= 16)
+            {
+                txtTelefone.TextAlign = HorizontalAlignment.Center;
+                txtTelefone.Mask = "(00) 0000 - 0000";
+            }
+            else
+            {
+                txtTelefone.TextAlign = HorizontalAlignment.Center;
+                txtTelefone.Mask = "(00) 0 0000 - 0000";
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
