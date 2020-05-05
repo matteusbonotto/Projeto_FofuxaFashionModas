@@ -1,4 +1,6 @@
-﻿namespace FFM.Visual.Forms
+﻿using System.Drawing;
+
+namespace FFM.Visual.Forms
 {
     partial class frm_MenuPrincipal
     {
@@ -47,8 +49,10 @@
             this.btnCompras = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.mnuUsuario = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panelConteudo = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.panelCabecalho.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -86,7 +90,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(241, 9);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(23, 24);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -255,6 +259,7 @@
             this.btnCompras.TabIndex = 0;
             this.btnCompras.Text = "    Compras";
             this.btnCompras.UseVisualStyleBackColor = true;
+            this.btnCompras.Click += new System.EventHandler(this.btnCompras_Click);
             // 
             // btnClientes
             // 
@@ -276,6 +281,8 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.panelMenu.Controls.Add(this.button3);
+            this.panelMenu.Controls.Add(this.button2);
             this.panelMenu.Controls.Add(this.pictureBox1);
             this.panelMenu.Controls.Add(this.button1);
             this.panelMenu.Controls.Add(this.lbllblDescricao_Autenticacao);
@@ -289,6 +296,23 @@
             this.panelMenu.Size = new System.Drawing.Size(152, 450);
             this.panelMenu.TabIndex = 7;
             // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.HotPink;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(6, 264);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(146, 39);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "        Logar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // mnuUsuario
             // 
             this.mnuUsuario.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -298,12 +322,31 @@
             // 
             // panelConteudo
             // 
+            this.panelConteudo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelConteudo.BackColor = System.Drawing.Color.White;
-            this.panelConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelConteudo.Location = new System.Drawing.Point(0, 0);
+            this.panelConteudo.Location = new System.Drawing.Point(152, 39);
             this.panelConteudo.Name = "panelConteudo";
-            this.panelConteudo.Size = new System.Drawing.Size(800, 450);
+            this.panelConteudo.Size = new System.Drawing.Size(648, 411);
             this.panelConteudo.TabIndex = 8;
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.HotPink;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 309);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(146, 39);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "        Cadastrar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // frm_MenuPrincipal
             // 
@@ -348,5 +391,7 @@
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.ContextMenuStrip mnuUsuario;
         private System.Windows.Forms.Panel panelConteudo;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

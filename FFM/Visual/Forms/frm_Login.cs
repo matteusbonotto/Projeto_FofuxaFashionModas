@@ -16,9 +16,15 @@ namespace FFM.Visual.Forms
         {
             InitializeComponent();
         }
+        private void Entrar()
+        {
+            Controle.ctrl_Login ctrlLogin = new Controle.ctrl_Login();
+            //ctrlLogin.VerificarAcesso(txtUsuario.Text, txtSenha.text);
+        }
 
-
-
-
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            Entrar();
+        }
     }
 }

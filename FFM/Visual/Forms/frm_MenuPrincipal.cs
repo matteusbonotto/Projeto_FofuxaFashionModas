@@ -48,7 +48,9 @@ namespace FFM.Visual.Forms
 
         private void ImgLoginRedondo()
         {
-          
+            System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
+            gp.AddEllipse(pictureBox2.DisplayRectangle);
+            pictureBox2.Region = new Region(gp);
         }
 
         public frm_MenuPrincipal()
@@ -112,6 +114,21 @@ namespace FFM.Visual.Forms
         private void btnClientes_Click(object sender, EventArgs e)
         {
             AbrirFormNoPanel<frmListarProdutos>();
+        }
+
+        private void btnCompras_Click(object sender, EventArgs e)
+        {
+            AbrirFormNoPanel<Visual.Forms.Vendas.frm_Vendas>();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AbrirFormNoPanel<frm_Login>();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirFormNoPanel<Visual.Forms.Cadastros.frm_Cadastrar_Produtos>();
         }
     }
 }

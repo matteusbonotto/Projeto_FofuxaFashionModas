@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FFM.Utilitario;
 
 namespace FFM.Controle
 {
@@ -12,9 +13,9 @@ namespace FFM.Controle
         private Modelo.mdlo_Login loginModel;
         public void VerificarAcesso(string usuario, string senha)
         {
-            if (usuario != "" && usuario != "usuario")
+            if (usuario != "")
             {
-                if (senha != "" && senha != "senha")
+                if (senha != "")
                 {
                     loginModel = new Modelo.mdlo_Login();
                     loginModel.Usuario = usuario;
@@ -24,26 +25,26 @@ namespace FFM.Controle
                         hash = new Seguranca.HashMD5();
                         if (hash.ComparaModificarMD5(senha, loginModel.Senha, loginModel.Salt_senha))
                         {
-                            //Msgbox.show("Sucesso");
+                            util_Msgbox.Sucesso("Logado Com sucesso");
                         }
                         else
                         {
-                            //Msgbox.show("Senha incorreta, tente novamente!");
+                            util_Msgbox.Aviso("Senha incorreta, tente novamente!");
                         }
                     }
                     else
                     {
-                        //Msgbox.show( "Usuário não existe, tente novamente!");
+                       util_Msgbox.Aviso( "Usuário não existe, tente novamente!");
                     }
                 }
                 else
                 {
-                    //Msgbox.show( "Digite uma senha válida!");
+                    util_Msgbox.Aviso( "Digite uma senha válida!");
                 }
             }
             else
             {
-                //Msgbox.show( "Digite um usuário válido!");
+                util_Msgbox.Aviso( "Digite um usuário válido!");
             }
 
         }

@@ -15,6 +15,19 @@ namespace FFM.Visual.Ucs
         public uc_ListaProdutos()
         {
             InitializeComponent();
+            Dock = DockStyle.Top;
+        }
+
+        private void uc_ListaProdutos_MouseHover(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Pink;
+            txtDescricao.BackColor = Color.Pink;
+        }
+
+        private void uc_ListaProdutos_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.White;
+            txtDescricao.BackColor = Color.White;
         }
     }
 }

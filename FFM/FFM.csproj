@@ -181,6 +181,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexao\clsConexao.cs" />
+    <Compile Include="Controle\ctrl_Cadastro_Produto.cs" />
     <Compile Include="Controle\ctrl_EnviarEmail.cs" />
     <Compile Include="Controle\ctrl_Login.cs" />
     <Compile Include="Modelo\Classes\Endereço.cs" />
@@ -242,6 +243,12 @@
     <Compile Include="Visual\Forms\frm_MenuPrincipal.Designer.cs">
       <DependentUpon>frm_MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Visual\Forms\frm_Sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\Forms\frm_Sobre.Designer.cs">
+      <DependentUpon>frm_Sobre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Visual\Forms\Listar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,6 +272,12 @@
     </Compile>
     <Compile Include="Visual\Ucs\uc_ListaProdutos.Designer.cs">
       <DependentUpon>uc_ListaProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visual\Ucs\uc_ListarProdutos_Pequeno.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Visual\Ucs\uc_ListarProdutos_Pequeno.Designer.cs">
+      <DependentUpon>uc_ListarProdutos_Pequeno.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -294,6 +307,9 @@
     <EmbeddedResource Include="Visual\Forms\frm_MenuPrincipal.resx">
       <DependentUpon>frm_MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Visual\Forms\frm_Sobre.resx">
+      <DependentUpon>frm_Sobre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Visual\Forms\Listar.resx">
       <DependentUpon>Listar.cs</DependentUpon>
     </EmbeddedResource>
@@ -305,6 +321,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Visual\Ucs\uc_ListaProdutos.resx">
       <DependentUpon>uc_ListaProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual\Ucs\uc_ListarProdutos_Pequeno.resx">
+      <DependentUpon>uc_ListarProdutos_Pequeno.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Modelo\Diagrama\dgmClasses.cd" />
     <None Include="packages.config" />

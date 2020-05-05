@@ -12,7 +12,8 @@ namespace FFM.Conexao
     class clsConexao
     {
         private MySqlCommand cmd;
-        private MySqlConnection con;
+        public MySqlConnection con;
+        public string sGlob_Conexao;
         private string host = "localhost";
         private string database = "dbFofuxaFashion;";
         private string username = "root";
@@ -27,6 +28,7 @@ namespace FFM.Conexao
                 "PASSWORD=" + password + ";";
 
             con = new MySqlConnection(connectionString);
+            sGlob_Conexao = connectionString;
         }
 
         public clsConexao(string host, string database, string username, string password)

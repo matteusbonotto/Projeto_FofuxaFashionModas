@@ -24,11 +24,10 @@ namespace FFM.Visual.Forms
             InitializeComponent();
             Listar_Produtos();
         }
-
         private void Listar_Produtos()
         {
             //for (int i = 0; i < Produtos.Count; i++)
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < 5; i++)
             {
                 //Ucs.uc_ListaProdutos uc_Listar_Produtos = new Ucs.uc_ListaProdutos(pass the person object);
                 Ucs.uc_ListaProdutos uc_Listar_Produtos = new Ucs.uc_ListaProdutos();
