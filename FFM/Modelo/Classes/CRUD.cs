@@ -6,7 +6,7 @@ using FFM.Controle;
 using FFM.Conexao;
 using FFM.Modelo;
 using MySql.Data.MySqlClient;
-
+using System.Data;
 
 namespace FFM
 {  
@@ -21,12 +21,98 @@ namespace FFM
         //###########################################################################################
         #endregion
 
+        #region "Pessoa"
+        //###########################################################################################
+        //############################       Classe Pessoa            ###############################
+        //###########################################################################################
+        public bool Cadastrar_Pessoa()
+        {
+            Conexao = new clsConexao();
+            String[] parametros = new string[13];
+            String nomeProcedure = "Cadastrar_Pessoa";
+            parametros[0] = ""; //Valor Recebida da Controle, ""Textbox""
+            parametros[1] = ""; 
+            parametros[2] = "";
+            parametros[3] = "";
+            parametros[4] = "";
+            parametros[5] = "";
+            parametros[6] = "";
+            parametros[7] = "";
+            parametros[8] = "";
+            parametros[9] = "";
+            parametros[10] = "";
+            parametros[11] = "";
+            parametros[12] = "";
+            return ExecutarProcedure(nomeProcedure, parametros);
+        }
+
+        public void Editar_Pessoa()
+        {
+            
+        }
+
+        public void Excluir_Pessoa()
+        {
+
+        }
+
+        public void Listar_pessoa()
+        {
+
+        }
+
+        public bool ExecutarProcedure(string nomeProcedure, string[] sqlProcedure)
+        {
+            bool retorno = false;
+            MySqlTransaction trans = null;
+            Conexao = new clsConexao();
+            try
+            {
+                    trans = Conexao.con.BeginTransaction();  //INICIO
+
+                Conexao.cmd = new MySqlCommand(nomeProcedure, Conexao.con);
+                Conexao.cmd.Parameters.AddWithValue("NOME_PESSOA", sqlProcedure[0]);
+                Conexao.cmd.Parameters.AddWithValue("TELEFONE_PESSOA", sqlProcedure[1]);
+                Conexao.cmd.Parameters.AddWithValue("CPF_PESSOA", sqlProcedure[2]);
+                Conexao.cmd.Parameters.AddWithValue("EMAIL_PESSOA", sqlProcedure[3]);
+                Conexao.cmd.Parameters.AddWithValue("TIPO", sqlProcedure[4]);
+                Conexao.cmd.Parameters.AddWithValue("RUA_PESSOA", sqlProcedure[5]);
+                Conexao.cmd.Parameters.AddWithValue("NUMERO_PESSOA", sqlProcedure[6]);
+                Conexao.cmd.Parameters.AddWithValue("BAIRRO_PESSOA", sqlProcedure[7]);
+                Conexao.cmd.Parameters.AddWithValue("CEP_PESSOA", sqlProcedure[8]);
+                Conexao.cmd.Parameters.AddWithValue("ID_CIDADE", sqlProcedure[9]);
+                Conexao.cmd.Parameters.AddWithValue("USUARIO_PESSOA", sqlProcedure[10]);
+                Conexao.cmd.Parameters.AddWithValue("SENHA_PESSOA", sqlProcedure[11]);
+                Conexao.cmd.Parameters.AddWithValue("SALT_SENHA_PESSOA", sqlProcedure[12]);
+                Conexao.cmd.CommandType = CommandType.StoredProcedure;
+                    int resposta = Conexao.cmd.ExecuteNonQuery();
+
+                    if (resposta != 0)
+                    {
+                        retorno = true;
+                        trans.Commit();
+                    }
+            }
+            catch (Exception ex)
+            {
+                trans.Rollback();
+                Utilitario.util_Msgbox.Aviso("Erro ao executar Query: " + ex.Message.ToString());
+            }
+            finally
+            {
+                Conexao.con.Close();
+            }
+            return retorno;
+        }
+
+        #endregion
+
         #region "Produto"
         //###########################################################################################
         //############################       Classe Produto           ###############################
         //###########################################################################################
 
-        
+
 
         public bool Cadastrar_Produto(Int32 _iID_Produto, String _sNome_Arquivo, String _sNome_Produto, String _sDescricao_Produto, String _sCor, String _sCategoria, String _sTamanho, Int32 _iQuantidade, String _sCodigo_Barras, Double _dPreco_Compra, Double _dPreco_Venda)
         {

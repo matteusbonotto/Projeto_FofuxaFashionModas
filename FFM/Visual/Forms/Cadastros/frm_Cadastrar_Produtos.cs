@@ -31,9 +31,8 @@ namespace FFM.Visual.Forms.Cadastros
         public frm_Cadastrar_Produtos()
         {
             InitializeComponent();
-            
         }
-
+        
         private void Listar_Produtos()
         {
             pnl_Listar_Produtos.Controls.Clear();
@@ -147,7 +146,7 @@ namespace FFM.Visual.Forms.Cadastros
             CRUD crud = new CRUD();
             ctrl_Cadastro_Produto Cadastro_Produtos = new ctrl_Cadastro_Produto();
             Salvar_imgem_DB();
-            Cadastro_Produtos.Cadastrar_Produto(Convert.ToInt32(txtId.Text), txtNomeArquivo.Text, txtNomeProduto.Text, txtDescricao_Produto.Text, txtCor.Text, cboCategoria.Text, cboTamanho.Text, txtCodigo_Barras.Text, Convert.ToDouble(txtPreco_Conpra_Produto.Text), Convert.ToDouble(txtPreco_Venda_Produto.Text)); //Colocar dados para cadastrar produto
+            Cadastro_Produtos.Cadastrar_Produto(Convert.ToInt32(txtId.Text), txtNomeArquivo.Text, txtNomeProduto.Text, txtDescricao_Produto.Text, txtCor.Text, cboCategoria.Text, cboTamanho.Text, txtCodigo_Barras.Text, Convert.ToDouble(Linha_Compra.Text), Convert.ToDouble(Linha_Venda.Text)); //Colocar dados para cadastrar produto
         }
 
         private void button3_Click(object sender, EventArgs e)

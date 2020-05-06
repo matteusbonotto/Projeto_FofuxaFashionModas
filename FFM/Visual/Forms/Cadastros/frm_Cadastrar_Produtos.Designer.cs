@@ -31,9 +31,7 @@
             this.btnExcluirProduto = new System.Windows.Forms.Button();
             this.btnEditarProduto = new System.Windows.Forms.Button();
             this.btnCadastrarProduto = new System.Windows.Forms.Button();
-            this.lblVencimento = new System.Windows.Forms.Label();
             this.lblPreco_Produto = new System.Windows.Forms.Label();
-            this.txtVencimento = new System.Windows.Forms.MaskedTextBox();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblNomeProduto = new System.Windows.Forms.Label();
             this.cboCategoria = new System.Windows.Forms.ComboBox();
@@ -45,14 +43,14 @@
             this.txtCor = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnPesquisarImagem = new System.Windows.Forms.Button();
-            this.txtPreco_Venda_Produto = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.Linha_Venda = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.lblNome_Arquivo = new System.Windows.Forms.Label();
             this.txtNomeArquivo = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.lblTamanho = new System.Windows.Forms.Label();
             this.txtCodigo_Barras = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.lblCodigo_Barras = new System.Windows.Forms.Label();
-            this.txtPreco_Conpra_Produto = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.Linha_Compra = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.cboTamanho = new System.Windows.Forms.ComboBox();
             this.pnl_Listar_Produtos = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -106,45 +104,22 @@
             this.btnCadastrarProduto.UseVisualStyleBackColor = false;
             this.btnCadastrarProduto.Click += new System.EventHandler(this.btnCadastrarProduto_Click);
             // 
-            // lblVencimento
-            // 
-            this.lblVencimento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblVencimento.AutoSize = true;
-            this.lblVencimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVencimento.Location = new System.Drawing.Point(297, 188);
-            this.lblVencimento.Name = "lblVencimento";
-            this.lblVencimento.Size = new System.Drawing.Size(86, 18);
-            this.lblVencimento.TabIndex = 12;
-            this.lblVencimento.Text = "Vencimento";
-            // 
             // lblPreco_Produto
             // 
             this.lblPreco_Produto.AutoSize = true;
             this.lblPreco_Produto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreco_Produto.Location = new System.Drawing.Point(159, 225);
+            this.lblPreco_Produto.Location = new System.Drawing.Point(165, 178);
             this.lblPreco_Produto.Name = "lblPreco_Produto";
             this.lblPreco_Produto.Size = new System.Drawing.Size(126, 18);
             this.lblPreco_Produto.TabIndex = 10;
             this.lblPreco_Produto.Text = "Preço de Compra";
-            // 
-            // txtVencimento
-            // 
-            this.txtVencimento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtVencimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVencimento.Location = new System.Drawing.Point(389, 184);
-            this.txtVencimento.Mask = "00/00/0000";
-            this.txtVencimento.Name = "txtVencimento";
-            this.txtVencimento.Size = new System.Drawing.Size(92, 23);
-            this.txtVencimento.TabIndex = 3;
-            this.txtVencimento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtVencimento.ValidatingType = typeof(System.DateTime);
             // 
             // lblCategoria
             // 
             this.lblCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(487, 188);
+            this.lblCategoria.Location = new System.Drawing.Point(288, 134);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(72, 18);
             this.lblCategoria.TabIndex = 8;
@@ -169,7 +144,7 @@
             this.cboCategoria.Items.AddRange(new object[] {
             "Alimentos",
             "Serviços"});
-            this.cboCategoria.Location = new System.Drawing.Point(565, 185);
+            this.cboCategoria.Location = new System.Drawing.Point(366, 129);
             this.cboCategoria.Name = "cboCategoria";
             this.cboCategoria.Size = new System.Drawing.Size(132, 24);
             this.cboCategoria.TabIndex = 14;
@@ -179,7 +154,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(451, 225);
+            this.label2.Location = new System.Drawing.Point(457, 173);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 18);
             this.label2.TabIndex = 17;
@@ -189,7 +164,7 @@
             // 
             this.lblQtdProduto.AutoSize = true;
             this.lblQtdProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQtdProduto.Location = new System.Drawing.Point(159, 188);
+            this.lblQtdProduto.Location = new System.Drawing.Point(159, 134);
             this.lblQtdProduto.Name = "lblQtdProduto";
             this.lblQtdProduto.Size = new System.Drawing.Size(44, 18);
             this.lblQtdProduto.TabIndex = 18;
@@ -199,7 +174,7 @@
             // 
             this.lblCor.AutoSize = true;
             this.lblCor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCor.Location = new System.Drawing.Point(159, 259);
+            this.lblCor.Location = new System.Drawing.Point(165, 212);
             this.lblCor.Name = "lblCor";
             this.lblCor.Size = new System.Drawing.Size(33, 18);
             this.lblCor.TabIndex = 22;
@@ -222,11 +197,11 @@
             this.txtNomeProduto.LineIdleColor = System.Drawing.Color.Purple;
             this.txtNomeProduto.LineMouseHoverColor = System.Drawing.Color.Magenta;
             this.txtNomeProduto.LineThickness = 2;
-            this.txtNomeProduto.Location = new System.Drawing.Point(241, 85);
-            this.txtNomeProduto.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNomeProduto.Location = new System.Drawing.Point(221, 85);
+            this.txtNomeProduto.Margin = new System.Windows.Forms.Padding(5);
             this.txtNomeProduto.MaxLength = 32767;
             this.txtNomeProduto.Name = "txtNomeProduto";
-            this.txtNomeProduto.Size = new System.Drawing.Size(457, 33);
+            this.txtNomeProduto.Size = new System.Drawing.Size(477, 33);
             this.txtNomeProduto.TabIndex = 52;
             this.txtNomeProduto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -247,8 +222,8 @@
             this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Purple;
             this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Magenta;
             this.bunifuMaterialTextbox2.LineThickness = 2;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(237, 177);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(221, 119);
+            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuMaterialTextbox2.MaxLength = 32767;
             this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
             this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(48, 33);
@@ -272,11 +247,11 @@
             this.txtCor.LineIdleColor = System.Drawing.Color.Purple;
             this.txtCor.LineMouseHoverColor = System.Drawing.Color.Magenta;
             this.txtCor.LineThickness = 2;
-            this.txtCor.Location = new System.Drawing.Point(223, 249);
-            this.txtCor.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtCor.Location = new System.Drawing.Point(206, 197);
+            this.txtCor.Margin = new System.Windows.Forms.Padding(5);
             this.txtCor.MaxLength = 32767;
             this.txtCor.Name = "txtCor";
-            this.txtCor.Size = new System.Drawing.Size(290, 33);
+            this.txtCor.Size = new System.Drawing.Size(243, 33);
             this.txtCor.TabIndex = 57;
             this.txtCor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -305,29 +280,29 @@
             this.btnPesquisarImagem.UseVisualStyleBackColor = false;
             this.btnPesquisarImagem.Click += new System.EventHandler(this.button2_Click);
             // 
-            // txtPreco_Venda_Produto
+            // Linha_Venda
             // 
-            this.txtPreco_Venda_Produto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPreco_Venda_Produto.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtPreco_Venda_Produto.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtPreco_Venda_Produto.characterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtPreco_Venda_Produto.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPreco_Venda_Produto.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPreco_Venda_Produto.ForeColor = System.Drawing.Color.Black;
-            this.txtPreco_Venda_Produto.HintForeColor = System.Drawing.Color.Empty;
-            this.txtPreco_Venda_Produto.HintText = "";
-            this.txtPreco_Venda_Produto.isPassword = false;
-            this.txtPreco_Venda_Produto.LineFocusedColor = System.Drawing.Color.DarkMagenta;
-            this.txtPreco_Venda_Produto.LineIdleColor = System.Drawing.Color.Purple;
-            this.txtPreco_Venda_Produto.LineMouseHoverColor = System.Drawing.Color.Magenta;
-            this.txtPreco_Venda_Produto.LineThickness = 2;
-            this.txtPreco_Venda_Produto.Location = new System.Drawing.Point(565, 215);
-            this.txtPreco_Venda_Produto.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.txtPreco_Venda_Produto.MaxLength = 32767;
-            this.txtPreco_Venda_Produto.Name = "txtPreco_Venda_Produto";
-            this.txtPreco_Venda_Produto.Size = new System.Drawing.Size(131, 33);
-            this.txtPreco_Venda_Produto.TabIndex = 64;
-            this.txtPreco_Venda_Produto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Linha_Venda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Linha_Venda.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.Linha_Venda.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.Linha_Venda.characterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.Linha_Venda.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Linha_Venda.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Linha_Venda.ForeColor = System.Drawing.Color.Black;
+            this.Linha_Venda.HintForeColor = System.Drawing.Color.Empty;
+            this.Linha_Venda.HintText = "";
+            this.Linha_Venda.isPassword = false;
+            this.Linha_Venda.LineFocusedColor = System.Drawing.Color.DarkMagenta;
+            this.Linha_Venda.LineIdleColor = System.Drawing.Color.Purple;
+            this.Linha_Venda.LineMouseHoverColor = System.Drawing.Color.Magenta;
+            this.Linha_Venda.LineThickness = 2;
+            this.Linha_Venda.Location = new System.Drawing.Point(571, 163);
+            this.Linha_Venda.Margin = new System.Windows.Forms.Padding(5);
+            this.Linha_Venda.MaxLength = 32767;
+            this.Linha_Venda.Name = "Linha_Venda";
+            this.Linha_Venda.Size = new System.Drawing.Size(127, 33);
+            this.Linha_Venda.TabIndex = 64;
+            this.Linha_Venda.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // lblNome_Arquivo
             // 
@@ -357,7 +332,7 @@
             this.txtNomeArquivo.LineMouseHoverColor = System.Drawing.Color.Magenta;
             this.txtNomeArquivo.LineThickness = 2;
             this.txtNomeArquivo.Location = new System.Drawing.Point(330, 50);
-            this.txtNomeArquivo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNomeArquivo.Margin = new System.Windows.Forms.Padding(5);
             this.txtNomeArquivo.MaxLength = 32767;
             this.txtNomeArquivo.Name = "txtNomeArquivo";
             this.txtNomeArquivo.Size = new System.Drawing.Size(367, 33);
@@ -383,7 +358,7 @@
             this.lblTamanho.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTamanho.AutoSize = true;
             this.lblTamanho.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTamanho.Location = new System.Drawing.Point(521, 259);
+            this.lblTamanho.Location = new System.Drawing.Point(513, 134);
             this.lblTamanho.Name = "lblTamanho";
             this.lblTamanho.Size = new System.Drawing.Size(71, 18);
             this.lblTamanho.TabIndex = 69;
@@ -406,11 +381,11 @@
             this.txtCodigo_Barras.LineIdleColor = System.Drawing.Color.Purple;
             this.txtCodigo_Barras.LineMouseHoverColor = System.Drawing.Color.Magenta;
             this.txtCodigo_Barras.LineThickness = 2;
-            this.txtCodigo_Barras.Location = new System.Drawing.Point(223, 285);
-            this.txtCodigo_Barras.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtCodigo_Barras.Location = new System.Drawing.Point(571, 197);
+            this.txtCodigo_Barras.Margin = new System.Windows.Forms.Padding(5);
             this.txtCodigo_Barras.MaxLength = 32767;
             this.txtCodigo_Barras.Name = "txtCodigo_Barras";
-            this.txtCodigo_Barras.Size = new System.Drawing.Size(474, 33);
+            this.txtCodigo_Barras.Size = new System.Drawing.Size(126, 33);
             this.txtCodigo_Barras.TabIndex = 72;
             this.txtCodigo_Barras.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -418,34 +393,34 @@
             // 
             this.lblCodigo_Barras.AutoSize = true;
             this.lblCodigo_Barras.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo_Barras.Location = new System.Drawing.Point(159, 287);
+            this.lblCodigo_Barras.Location = new System.Drawing.Point(457, 212);
             this.lblCodigo_Barras.Name = "lblCodigo_Barras";
             this.lblCodigo_Barras.Size = new System.Drawing.Size(56, 18);
             this.lblCodigo_Barras.TabIndex = 71;
             this.lblCodigo_Barras.Text = "Código";
             // 
-            // txtPreco_Conpra_Produto
+            // Linha_Compra
             // 
-            this.txtPreco_Conpra_Produto.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtPreco_Conpra_Produto.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtPreco_Conpra_Produto.characterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtPreco_Conpra_Produto.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPreco_Conpra_Produto.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPreco_Conpra_Produto.ForeColor = System.Drawing.Color.Black;
-            this.txtPreco_Conpra_Produto.HintForeColor = System.Drawing.Color.Empty;
-            this.txtPreco_Conpra_Produto.HintText = "";
-            this.txtPreco_Conpra_Produto.isPassword = false;
-            this.txtPreco_Conpra_Produto.LineFocusedColor = System.Drawing.Color.DarkMagenta;
-            this.txtPreco_Conpra_Produto.LineIdleColor = System.Drawing.Color.Purple;
-            this.txtPreco_Conpra_Produto.LineMouseHoverColor = System.Drawing.Color.Magenta;
-            this.txtPreco_Conpra_Produto.LineThickness = 2;
-            this.txtPreco_Conpra_Produto.Location = new System.Drawing.Point(293, 215);
-            this.txtPreco_Conpra_Produto.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.txtPreco_Conpra_Produto.MaxLength = 32767;
-            this.txtPreco_Conpra_Produto.Name = "txtPreco_Conpra_Produto";
-            this.txtPreco_Conpra_Produto.Size = new System.Drawing.Size(150, 33);
-            this.txtPreco_Conpra_Produto.TabIndex = 74;
-            this.txtPreco_Conpra_Produto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Linha_Compra.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.Linha_Compra.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.Linha_Compra.characterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.Linha_Compra.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Linha_Compra.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Linha_Compra.ForeColor = System.Drawing.Color.Black;
+            this.Linha_Compra.HintForeColor = System.Drawing.Color.Empty;
+            this.Linha_Compra.HintText = "";
+            this.Linha_Compra.isPassword = false;
+            this.Linha_Compra.LineFocusedColor = System.Drawing.Color.DarkMagenta;
+            this.Linha_Compra.LineIdleColor = System.Drawing.Color.Purple;
+            this.Linha_Compra.LineMouseHoverColor = System.Drawing.Color.Magenta;
+            this.Linha_Compra.LineThickness = 2;
+            this.Linha_Compra.Location = new System.Drawing.Point(299, 163);
+            this.Linha_Compra.Margin = new System.Windows.Forms.Padding(5);
+            this.Linha_Compra.MaxLength = 32767;
+            this.Linha_Compra.Name = "Linha_Compra";
+            this.Linha_Compra.Size = new System.Drawing.Size(150, 33);
+            this.Linha_Compra.TabIndex = 74;
+            this.Linha_Compra.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // cboTamanho
             // 
@@ -456,7 +431,7 @@
             this.cboTamanho.Items.AddRange(new object[] {
             "Alimentos",
             "Serviços"});
-            this.cboTamanho.Location = new System.Drawing.Point(598, 256);
+            this.cboTamanho.Location = new System.Drawing.Point(599, 128);
             this.cboTamanho.Name = "cboTamanho";
             this.cboTamanho.Size = new System.Drawing.Size(99, 24);
             this.cboTamanho.TabIndex = 75;
@@ -470,9 +445,9 @@
             this.pnl_Listar_Produtos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pnl_Listar_Produtos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl_Listar_Produtos.ForeColor = System.Drawing.Color.Black;
-            this.pnl_Listar_Produtos.Location = new System.Drawing.Point(161, 350);
+            this.pnl_Listar_Produtos.Location = new System.Drawing.Point(161, 318);
             this.pnl_Listar_Produtos.Name = "pnl_Listar_Produtos";
-            this.pnl_Listar_Produtos.Size = new System.Drawing.Size(536, 82);
+            this.pnl_Listar_Produtos.Size = new System.Drawing.Size(536, 114);
             this.pnl_Listar_Produtos.TabIndex = 76;
             // 
             // pictureBox1
@@ -520,7 +495,7 @@
             this.txtId.LineMouseHoverColor = System.Drawing.Color.Magenta;
             this.txtId.LineThickness = 2;
             this.txtId.Location = new System.Drawing.Point(46, 50);
-            this.txtId.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtId.Margin = new System.Windows.Forms.Padding(5);
             this.txtId.MaxLength = 32767;
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(104, 33);
@@ -541,7 +516,7 @@
             // 
             this.lblDescricao_Produto.AutoSize = true;
             this.lblDescricao_Produto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao_Produto.Location = new System.Drawing.Point(159, 123);
+            this.lblDescricao_Produto.Location = new System.Drawing.Point(165, 247);
             this.lblDescricao_Produto.Name = "lblDescricao_Produto";
             this.lblDescricao_Produto.Size = new System.Drawing.Size(76, 18);
             this.lblDescricao_Produto.TabIndex = 80;
@@ -553,9 +528,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescricao_Produto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDescricao_Produto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescricao_Produto.Location = new System.Drawing.Point(241, 123);
+            this.txtDescricao_Produto.Location = new System.Drawing.Point(254, 247);
             this.txtDescricao_Produto.Name = "txtDescricao_Produto";
-            this.txtDescricao_Produto.Size = new System.Drawing.Size(457, 50);
+            this.txtDescricao_Produto.Size = new System.Drawing.Size(444, 41);
             this.txtDescricao_Produto.TabIndex = 81;
             this.txtDescricao_Produto.Text = "";
             // 
@@ -564,11 +539,11 @@
             this.lblTitulo_Listagem.AutoSize = true;
             this.lblTitulo_Listagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo_Listagem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblTitulo_Listagem.Location = new System.Drawing.Point(164, 323);
+            this.lblTitulo_Listagem.Location = new System.Drawing.Point(164, 291);
             this.lblTitulo_Listagem.Name = "lblTitulo_Listagem";
-            this.lblTitulo_Listagem.Size = new System.Drawing.Size(197, 24);
+            this.lblTitulo_Listagem.Size = new System.Drawing.Size(212, 24);
             this.lblTitulo_Listagem.TabIndex = 82;
-            this.lblTitulo_Listagem.Text = "Liagem de Produtos";
+            this.lblTitulo_Listagem.Text = "Listagem de Produtos";
             // 
             // frm_Cadastrar_Produtos
             // 
@@ -584,14 +559,14 @@
             this.Controls.Add(this.btnListar_Produtos);
             this.Controls.Add(this.pnl_Listar_Produtos);
             this.Controls.Add(this.cboTamanho);
-            this.Controls.Add(this.txtPreco_Conpra_Produto);
+            this.Controls.Add(this.Linha_Compra);
             this.Controls.Add(this.txtCodigo_Barras);
             this.Controls.Add(this.lblCodigo_Barras);
             this.Controls.Add(this.lblTamanho);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.txtNomeArquivo);
             this.Controls.Add(this.lblNome_Arquivo);
-            this.Controls.Add(this.txtPreco_Venda_Produto);
+            this.Controls.Add(this.Linha_Venda);
             this.Controls.Add(this.btnPesquisarImagem);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.pictureBox1);
@@ -601,10 +576,8 @@
             this.Controls.Add(this.btnCadastrarProduto);
             this.Controls.Add(this.bunifuMaterialTextbox2);
             this.Controls.Add(this.txtNomeProduto);
-            this.Controls.Add(this.lblVencimento);
             this.Controls.Add(this.lblPreco_Produto);
             this.Controls.Add(this.lblCor);
-            this.Controls.Add(this.txtVencimento);
             this.Controls.Add(this.lblQtdProduto);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.label2);
@@ -622,9 +595,7 @@
         private System.Windows.Forms.Button btnExcluirProduto;
         private System.Windows.Forms.Button btnEditarProduto;
         private System.Windows.Forms.Button btnCadastrarProduto;
-        private System.Windows.Forms.Label lblVencimento;
         private System.Windows.Forms.Label lblPreco_Produto;
-        private System.Windows.Forms.MaskedTextBox txtVencimento;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label lblNomeProduto;
         private System.Windows.Forms.ComboBox cboCategoria;
@@ -637,14 +608,14 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnPesquisarImagem;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtPreco_Venda_Produto;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox Linha_Venda;
         private System.Windows.Forms.Label lblNome_Arquivo;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtNomeArquivo;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label lblTamanho;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtCodigo_Barras;
         private System.Windows.Forms.Label lblCodigo_Barras;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtPreco_Conpra_Produto;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox Linha_Compra;
         private System.Windows.Forms.ComboBox cboTamanho;
         private System.Windows.Forms.Panel pnl_Listar_Produtos;
         private System.Windows.Forms.Button btnListar_Produtos;

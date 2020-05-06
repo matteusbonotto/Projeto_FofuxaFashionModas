@@ -740,7 +740,6 @@
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(81, 17);
             this.txtCep.TabIndex = 108;
-            this.txtCep.Text = "13064500";
             this.txtCep.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // grdListarPessoa

@@ -165,5 +165,9 @@ namespace FFM.Conexao
             // A query não possuía uma resposta, então não se retorna nada.
             return null;
         }
+        public bool ExecutarProcedure(String _sNome_Procedure, String _sParametros)
+        {
+            return true;
+        }
     }
 }

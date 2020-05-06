@@ -49,10 +49,14 @@ namespace FFM.Visual.Forms.Cadastros
                 txtTelefone.TextAlign = HorizontalAlignment.Center;
                 txtTelefone.Mask = "(00) 0000 - 0000";
             }
-            else
+            else if (Tamanho > 16 && Tamanho < 18)
             {
                 txtTelefone.TextAlign = HorizontalAlignment.Center;
                 txtTelefone.Mask = "(00) 0 0000 - 0000";
+            }
+            else
+            {
+                Utilitario.util_Msgbox.Aviso("Digite um numero Valido!");
             }
         }
 
