@@ -16,7 +16,7 @@ namespace FFM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Visual.Forms.Principais.frm_MenuPrincipal());
+            Application.Run(new Visual.Forms.Principais.frm_MenuPrincipal("Visitante"));
         }
     }
 }

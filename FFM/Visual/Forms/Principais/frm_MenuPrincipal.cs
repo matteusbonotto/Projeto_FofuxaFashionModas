@@ -9,42 +9,22 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Drawing.Drawing2D;
-using System.Windows.Forms;
 
 namespace FFM.Visual.Forms.Principais
 {
     public partial class frm_MenuPrincipal : Form
     {
+        Controle.Pessoa.Usuario.ctrl_Login Login = new Controle.Pessoa.Usuario.ctrl_Login();
+        private int PosicaoIMGLoginX;
+        private int PosicaoIMGLoginY;
+        private bool Saiu = false;
         [DllImport("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
-
-        private void AbrirFormNoPanel<Forms>() where Forms : Form, new()
-        {
-            Form formulario;
-            formulario = panelConteudo.Controls.OfType<Forms>().FirstOrDefault();
-
-            if (formulario == null)
-            {
-                formulario = new Forms();
-                formulario.TopLevel = false;
-                formulario.FormBorderStyle = FormBorderStyle.None;
-                formulario.Dock = DockStyle.Fill;
-                panelConteudo.Controls.Add(formulario);
-                panelConteudo.Tag = formulario;
-                formulario.Show();
-                formulario.BringToFront();
-            }
-            else
-            {
-                if (formulario.WindowState == FormWindowState.Minimized)
-                    formulario.WindowState = FormWindowState.Normal;
-                formulario.BringToFront();
-            }
-        }
+        public String sLicenca;
 
         private void ImgLoginRedondo()
         {
@@ -53,10 +33,46 @@ namespace FFM.Visual.Forms.Principais
             pictureBox2.Region = new Region(gp);
         }
 
-        public frm_MenuPrincipal()
+        public frm_MenuPrincipal(string _sLicenca)
         {
             InitializeComponent();
             ImgLoginRedondo();
+            PosicaoIMGLoginX = pictureBox2.Location.X - 340;
+            PosicaoIMGLoginY = pictureBox2.Location.Y + 25;
+            sLicenca = _sLicenca;
+        }
+
+        public void Autenticado(String _sNome, String _sLicenca)
+        {
+            if(_sLicenca == "Administrador")
+            {
+                lblLicenca.ForeColor = System.Drawing.Color.Red;
+                lblLicenca.Text = _sLicenca;
+                lblAutenticacao.Text = _sNome;
+                sLicenca = _sLicenca;
+
+                Panel_Menus.Controls.Clear();
+                Ucs.uc_Painel_Administrador ucAdmin = new Ucs.uc_Painel_Administrador(this);
+                Panel_Menus.Controls.Add(ucAdmin);
+
+                panelConteudo.Controls.Clear();
+                Ucs.Principais.uc_Bem_Vindo ucBoasVindas = new Ucs.Principais.uc_Bem_Vindo(this);
+                panelConteudo.Controls.Add(ucBoasVindas);
+
+                pictureBox2.Load("C:/Users/Matteus Bonotto/Desktop/Aulas/5ºSemestre/Liguagem de Programação/FofuxaFashionModas/Sistema/FFM/FFM/Repositorio/img_pessoas/adm.jpg");
+
+                btnSair.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("Não deu certo o usuario é: "+ _sNome + "e a licenca é " + _sLicenca);
+            }
+
+        }
+
+        public void AdicionarPanelConteudo(object obj)
+        {
+            panelConteudo.Controls.Add((Control)obj);
         }
 
         private void btnRestaurar_Click(object sender, EventArgs e)
@@ -77,64 +93,175 @@ namespace FFM.Visual.Forms.Principais
             Application.Exit();
         }
 
-        private void lblDescricao_Licenca_MouseMove(object sender, MouseEventArgs e)
+        private void btnProdutos_Click(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+           frm_Cadastro_Simples frmSimples = new frm_Cadastro_Simples();
+            frmSimples.ShowDialog();
+        }
+        public void AbrirTela(String _sBotao)
+        {
+            panelConteudo.Controls.Clear();
+            if (_sBotao == "blusas")
             {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+                Ucs.Cadastros.uc_ListarProdutos ucProdutos = new Ucs.Cadastros.uc_ListarProdutos(this);
+                ucProdutos.Dock = DockStyle.Fill;
+                panelConteudo.Controls.Add(ucProdutos);
             }
+            else if (_sBotao == "calcas")
+            {
+                Ucs.Cadastros.uc_ListarProdutos ucProdutos = new Ucs.Cadastros.uc_ListarProdutos(this);
+                ucProdutos.Dock = DockStyle.Fill;
+                panelConteudo.Controls.Add(ucProdutos);
+            }
+            else if (_sBotao == "sapatos")
+            {
+                Ucs.Cadastros.uc_ListarProdutos ucProdutos = new Ucs.Cadastros.uc_ListarProdutos(this);
+                ucProdutos.Dock = DockStyle.Fill;
+                panelConteudo.Controls.Add(ucProdutos);
+            }
+            else if (_sBotao == "intimas")
+            {
+                Ucs.Cadastros.uc_ListarProdutos ucProdutos = new Ucs.Cadastros.uc_ListarProdutos(this);
+                ucProdutos.Dock = DockStyle.Fill;
+                panelConteudo.Controls.Add(ucProdutos);
+            }
+            else if (_sBotao == "estoque")
+            {
+                Ucs.Cadastros.uc_ListarProdutos ucProdutos = new Ucs.Cadastros.uc_ListarProdutos(this);
+                ucProdutos.Dock = DockStyle.Fill;
+                panelConteudo.Controls.Add(ucProdutos);
+            }
+            else if (_sBotao == "cadastrarProdutos")
+            {
+                Ucs.Cadastros.uc_Cadastro_Produtos ucProdutos = new Ucs.Cadastros.uc_Cadastro_Produtos();
+                ucProdutos.Dock = DockStyle.Fill;
+                panelConteudo.Controls.Add(ucProdutos);
+            }
+            else if (_sBotao == "relatorioProdutos")
+            {
+                Ucs.Cadastros.uc_ListarProdutos ucProdutos = new Ucs.Cadastros.uc_ListarProdutos(this);
+                ucProdutos.Dock = DockStyle.Fill;
+                panelConteudo.Controls.Add(ucProdutos);
+            }
+            else if (_sBotao == "")
+            {
+                Ucs.Cadastros.uc_ListarProdutos ucProdutos = new Ucs.Cadastros.uc_ListarProdutos(this);
+                ucProdutos.Dock = DockStyle.Fill;
+                panelConteudo.Controls.Add(ucProdutos);
+            }
+            else if (_sBotao == "")
+            {
+                Ucs.Cadastros.uc_ListarProdutos ucProdutos = new Ucs.Cadastros.uc_ListarProdutos(this);
+                ucProdutos.Dock = DockStyle.Fill;
+                panelConteudo.Controls.Add(ucProdutos);
+            }
+            else if (_sBotao == "")
+            {
+                Ucs.Cadastros.uc_ListarProdutos ucProdutos = new Ucs.Cadastros.uc_ListarProdutos(this);
+                ucProdutos.Dock = DockStyle.Fill;
+                panelConteudo.Controls.Add(ucProdutos);
+            }
+
         }
 
-        private void panelCabecalho_MouseMove(object sender, MouseEventArgs e)
+        public void btnEntrar_Click(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
+            panelConteudo.Controls.Clear();
+            Ucs.Principais.uc_Login ucLogin = new Ucs.Principais.uc_Login(this);
+            ucLogin.Dock = DockStyle.Fill;
+            panelConteudo.Controls.Add(ucLogin);
         }
 
-        private void lblTitulo_MouseMove(object sender, MouseEventArgs e)
+
+
+
+        public void CarregaDados()
         {
-            if (e.Button == MouseButtons.Left)
+            //lblAutenticacao.Text = _sNome;
+            lblLicenca.Text = sLicenca;
+        }
+
+        public void frm_MenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+            if (sLicenca == "Administrador")
             {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+                //Estancio o user control "Menu_Produtos" ee passo minha tela principal
+                //como parametro para o metodo que esta lá
+                panelMenu.Controls.Clear();
+                Ucs.uc_Painel_Produtos ucPrincipal = new Ucs.uc_Painel_Produtos(this);
+                Panel_Menus.Controls.Add(ucPrincipal);
+            }
+            else if (sLicenca == "Visitante")
+            {
+                if(Saiu)
+                {
+                    Ucs.Principais.uc_Bem_Vindo ucBoasVindas = new Ucs.Principais.uc_Bem_Vindo(this);
+                    panelConteudo.Controls.Add(ucBoasVindas);
+                    Ucs.uc_Painel_Produtos ucPrincipal = new Ucs.uc_Painel_Produtos(this);
+                    Panel_Menus.Controls.Add(ucPrincipal);
+                    
+                }
+                else
+                {
+                    Ucs.uc_Painel_Produtos ucPrincipal = new Ucs.uc_Painel_Produtos(this);
+                    Panel_Menus.Controls.Add(ucPrincipal);
+                    Ucs.Principais.uc_Bem_Vindo ucBoasVindas = new Ucs.Principais.uc_Bem_Vindo(this);
+                    panelConteudo.Controls.Add(ucBoasVindas);
+                }
+            }
+            else
+            {
+                Utilitario.util_Msgbox.Aviso("Deu Erro Olha de novo ai!!");
             }
 
-            //teste
+        }
+
+        public void LimparPainel()
+        {
+            panelConteudo.Controls.Clear();
+            Ucs.Principais.uc_Bem_Vindo ucBoasVindas = new Ucs.Principais.uc_Bem_Vindo(this);
+            panelConteudo.Controls.Add(ucBoasVindas);
+        }
+
+        private void panelConteudo_ParentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelConteudo_ControlAdded(object sender, ControlEventArgs e)
+        {
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            mnuUsuario.Show(pictureBox2, new Point(PosicaoIMGLoginX, PosicaoIMGLoginY));
         }
 
-        private void btnClientes_Click(object sender, EventArgs e)
+        private void mnuSair_Click(object sender, EventArgs e)
         {
-            AbrirFormNoPanel<Visual.Forms.Cadastros.frmListarProdutos>();
+            Saiu = true;
+            panelConteudo.Controls.Clear();
+            panelMenu.Controls.Clear();
+            lblLicenca.ForeColor = System.Drawing.Color.White;
+            lblAutenticacao.Text = "Visitante";
+            lblLicenca.Text = "Visitante";
+            frm_MenuPrincipal_Load(sender, e);
         }
 
-        private void btnCompras_Click(object sender, EventArgs e)
+        private void Mover_Tela_MouseMove(object sender, MouseEventArgs e)
         {
-            AbrirFormNoPanel<Visual.Forms.Cadastros.frm_Cadastrar_Usuario>();
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnSair_Click(object sender, EventArgs e)
         {
-            AbrirFormNoPanel<Visual.Forms.Principais.frm_Login>();
-        }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            AbrirFormNoPanel<Visual.Forms.Cadastros.frm_Cadastrar_Produtos>();
-        }
-
-        private void btnProdutos_Click(object sender, EventArgs e)
-        {
-            Visual.Forms.Cadastros.frm_Cadastro_Simples frmSimples = new Cadastros.frm_Cadastro_Simples();
-            frmSimples.ShowDialog();
         }
     }
 }

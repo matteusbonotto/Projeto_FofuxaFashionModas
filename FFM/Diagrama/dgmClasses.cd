@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FFM.Controle.Pessoa.Pessoa">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAQAgAIAAIACAAAIAAAAAAIAAAEQAAABEAAAAA=</HashCode>
+      <FileName>Controle\Pessoa\ctrl_Pessoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Controle.Pessoa.Cliente">
+    <Position X="15" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>Controle\Pessoa\ctrl_Cliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Controle.Pessoa.Funcionario">
+    <Position X="17.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
+      <FileName>Controle\Pessoa\ctrl_Funcionario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Controle.Produto.Produto_Categoria">
+    <Position X="9.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAEAAAABAAA=</HashCode>
+      <FileName>Controle\Produto\ctrl_Categoria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Controle.Produto.Estoque">
+    <Position X="16.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controle\Produto\ctrl_Estoque.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Controle.Produto.Pedido">
+    <Position X="14.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAgACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Controle\Produto\ctrl_Pedido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Controle.Produto.Produto_Detalhes">
+    <Position X="11.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAABAAEAAQAhCAEAIAAhAAAAAAAACAAA=</HashCode>
+      <FileName>Controle\Produto\ctrl_Detalhes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Controle.Pessoa.Pessoa_Categoria">
+    <Position X="12.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAACAAEAAgA=</HashCode>
+      <FileName>Controle\Pessoa\ctrl_Tipo_Pessoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Controle.Pessoa.Usuario.Usuario_Acesso">
+    <Position X="19.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEACAABoAAAAAEAAAABAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Controle\Pessoa\Usuario\ctrl_Usuario_Acesso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Controle.Pessoa.Juridica">
+    <Position X="9.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Controle\Pessoa\ctrl_Juridica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Controle.Pessoa.Fisica">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controle\Pessoa\ctrl_Fisica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Modelo.CRUDPessoa">
+    <Position X="3.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAgEAAAAAAAAAAAAQAAAAAAAAAAAAAAAAgAAAgAAA=</HashCode>
+      <FileName>Modelo\mdlo_Pessoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Modelo.CRUDEndereco">
+    <Position X="9.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\mdlo_Endereco.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Modelo.mdlo_Produto">
+    <Position X="7.25" Y="11.5" Width="1.5" />
+    <InheritanceLine Type="FFM.Modelo.mdlo_Cadastro_Simples" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="7.824" />
+        <Point X="4.5" Y="12.75" />
+        <Point X="7.25" Y="12.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AACgAEAAAAAAAAQCAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\mdlo_Produto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Modelo.mdlo_Login">
+    <Position X="15" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAEAAAAAAAAAAAAIAAQAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\mdlo_Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Controle.Pessoa.Endereço">
+    <Position X="9.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACAAAhAwAAISEEAAAABAwAAAgEAABKAAAAQ=</HashCode>
+      <FileName>Controle\Pessoa\ctrl_Endereço.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Controle.Produto.ctrl_Produto">
+    <Position X="7.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAAAAUAAAAEQAACAAIAAAECIAAAACACAAA=</HashCode>
+      <FileName>Controle\Produto\ctrl_Produto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FFM.Modelo.mdlo_Cadastro_Simples">
+    <Position X="3.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAABAAAAAAAAAAAEAAAAAAAAAAAAAAAAgAABAA=</HashCode>
+      <FileName>Modelo\mdlo_Cadastro_Simples.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

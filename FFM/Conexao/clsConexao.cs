@@ -15,7 +15,7 @@ namespace FFM.Conexao
         public MySqlConnection con;
         public string sGlob_Conexao;
         private string host = "localhost";
-        private string database = "dbFofuxaFashion;";
+        private string database = "dbfofuxafashion;";
         private string username = "root";
         private string password = "";
 
@@ -42,7 +42,7 @@ namespace FFM.Conexao
             con = new MySqlConnection(connectionString);
         }
 
-        private bool OpenConnection()
+        public bool OpenConnection()
         {
             // Inicializa uma conexão para realizar uma query.
             try
@@ -56,7 +56,7 @@ namespace FFM.Conexao
                 return false;
             }
         }
-        private bool CloseConnection()
+        public bool CloseConnection()
         {
             // Finaliza uma conexão após realizar uma query.
             try
@@ -165,9 +165,8 @@ namespace FFM.Conexao
             // A query não possuía uma resposta, então não se retorna nada.
             return null;
         }
-        public bool ExecutarProcedure(String _sNome_Procedure, String _sParametros)
-        {
-            return true;
-        }
+        //public bool ExecutarProcedure(String _sNome_Procedure, String _sParametros)
+        //{
+        //}
     }
 }

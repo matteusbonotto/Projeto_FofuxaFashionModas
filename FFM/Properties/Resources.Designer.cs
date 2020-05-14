@@ -63,9 +63,9 @@ namespace FFM.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_adicionar_o_carrinho_de_compras_16 {
+        internal static System.Drawing.Bitmap Beleza_Sem_Tamanho {
             get {
-                object obj = ResourceManager.GetObject("icons8-adicionar-o-carrinho-de-compras-16", resourceCulture);
+                object obj = ResourceManager.GetObject("Beleza_Sem_Tamanho", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,209 @@ namespace FFM.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_adicionar_o_carrinho_de_compras_30 {
+        internal static System.Drawing.Bitmap blog__2_ {
             get {
-                object obj = ResourceManager.GetObject("icons8-adicionar-o-carrinho-de-compras-30", resourceCulture);
+                object obj = ResourceManager.GetObject("blog (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_à_esquerda_dentro_de_um_círculo_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-à-esquerda-dentro-de-um-círculo-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_adicionar_grupo_de_usuários_mulher_homem_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-adicionar-grupo-de-usuários-mulher-homem-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_adicionar_o_carrinho_de_compras_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-adicionar-o-carrinho-de-compras-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_armazém_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-armazém-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_bikini_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bikini-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_calças_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-calças-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cartão_em_uso_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cartão-em-uso-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_entrar_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-entrar-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_gráfico_de_pizza_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-gráfico-de-pizza-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_hashtag_grande_36 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-hashtag-grande-36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_lista_2_36 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-lista-2-36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_o_t_shirt_das_mulheres_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-o-t-shirt-das-mulheres-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_pesquisa_google_na_web_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-pesquisa-google-na-web-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_pesquisa_google_na_web_28 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-pesquisa-google-na-web-28", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_sacola_de_compras_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-sacola-de-compras-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_sair_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-sair-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_sapato_feminino_26 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-sapato-feminino-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_usuário_homem_com_círculo_24__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-usuário-homem-com-círculo-24 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_verificar_36 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-verificar-36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap produto1 {
+            get {
+                object obj = ResourceManager.GetObject("produto1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

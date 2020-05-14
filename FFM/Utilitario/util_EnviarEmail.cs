@@ -23,8 +23,8 @@ namespace FFM.Utilitario
         /*declarando variaveis e passando valores referente a utilização de cada uma, conexão com servidor e-mail*/
         private string serverSmtp = "smtp.gmail.com",
                 serverPorta = "587",
-                serverEmail = "sistema.mercado.ed@gmail.com",
-                serverSenha = "ProjetoSistema2020";
+                serverEmail = "5si.fofuxa.fashion.modas@gmail.com",
+                serverSenha = "123456A@";
 
         public string Email { get => email; set => email = value; }
         public string NomeRemetente { get => nomeRemetente; set => nomeRemetente = value; }
